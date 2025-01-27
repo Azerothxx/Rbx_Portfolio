@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>W3.CSS Template</title>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/CSS/index.css">
+
+	</head>
+
+	<body>
+
+		<!-- Navbar (sit on top) -->
+		<!-- <div class="w3-top">
+			<div class="w3-bar" id="myNavbar">
+				<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+					<i class="fa fa-bars"></i>
+				</a>
+
+				<a href="#home" class="w3-bar-item w3-button">HOME</a>
+				<a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+				<a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+				<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+				<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+					<i class="fa fa-search"></i>
+				</a>
+			</div>
+
+			Navbar on small screens 
+			<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+				<a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+				<a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+				<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+				<a href="#" class="w3-bar-item w3-button">SEARCH</a>
+			</div>
+		</div> -->
+
+		<!-- First Parallax Image with Logo Text -->
+		<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+			<div class="w3-display-middle" style="white-space:nowrap;">
+				<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Azerothxx <span class="w3-hide-small"></span> Portfolio</span>
+			</div>
+		</div>
+
+		<!-- Container (About Section) -->
+		<div class="w3-content w3-container w3-padding-64" id="about">
+			<h3 class="w3-center">ABOUT ME</h3>
+			<p class="w3-center"><em>Experienced 4+ Years Scripter</em></p>
+			<p>
+				I have been developing on the Roblox platform for 4+ years now and have such garnered knowledge of ins and outs of the the roblox engine.
+				Knowing a great deal of Lua and Roblox's Luau, I am adept at creating many types of systems however I specialize in combat systems such as Fighting or Shooters.
+				I also have extensive knoweldge in Programming paradigms such as procedural, functional, Object-orient (OOP), and Entity-Components (ECS).
+			</p>
+			
+			<div class="w3-row">
+				<div class="w3-col m6 w3-center w3-padding-large">
+					<p><b><i class="fa fa-user w3-margin-right"></i>Azerothxx</b></p><br>
+					<img src="/Resources/Ragdoll0.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+				</div>
+
+				<p class="w3-large w3-center">Frameworks / Utils I use:</p>
+				
+				<!-- Hide this text on small devices -->
+				<div class="w3-col m6 w3-hide-small w3-padding-large">
+					<p><strong>Rojo-VS Code</strong> - allowing the use of VScode and use of extensions</p>
+					<p><strong>Slietnick's Knit</strong> - common game framework used in roblox games</p>
+					<p><strong>Slietnick's Utils</strong> - various useful utils available</p>
+					<p><strong>FastCast</strong> - common library for raycasting needs</p>
+					<p><strong>PartCache</strong> - conjunction with fastcast to enable quick projectiles</p>
+					<p><strong>ProfileStore</strong> - allows for easier management of saved game-data</p>
+					<p><strong>ReplicaService</strong> - allows for easy replication of states</p>
+					<p><strong>Matter ECS</strong> - ECS library for roblox complete with debugger</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Second Parallax Image with Portfolio Text -->
+		<div class="bgimg-2 w3-display-container w3-opacity-min">
+			<div class="w3-display-middle">
+				<span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+			</div>
+		</div>
+
+		<!-- Container (Portfolio Section) -->
+		<div class="w3-content w3-container w3-padding-64" id="portfolio">
+			<h3 class="w3-center">Previous Systems</h3>
+			<p class="w3-center">Click on the items to enlarge</em></p><br>
+
+			<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+			<div class="w3-row-padding w3-center">
+				<div class="w3-col m3">
+					<img src="/Resources/Dragon0.png" id="dragon" style="width: 100%; height: 100px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Dragon system">
+				</div>
+
+				<div class="w3-col m3">
+					<img src="/Resources/Gun0.png" id="gun" style="width: 100%; height: 100px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Gun system">
+				</div>
+
+				<div class="w3-col m3">
+					<img src="/Resources/DragonBall0.png" id="dragonBall" style="width: 100%; height: 100px;" onclick="onClick(this)" class="w3-hover-opacity" alt="DragonBall system">
+				</div>
+
+				<div class="w3-col m3">
+					<img src="/Resources/Combat0.png" id="combat" style="width: 100%; height: 100px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Combat system">
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-center w3-section">
+				<div class="w3-col m3">
+					<img src="/Resources/Movement0.png" id="movement" style="width: 100%; height: 100px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Movement system">
+				</div>
+
+				<div class="w3-col m3">
+					<img src="/Resources/Transform0.png" id="transform" style="width: 100%; height: 100px;" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+				</div>
+
+				<!-- <div class="w3-col m3">
+					<img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+				</div>
+
+				<div class="w3-col m3">
+					<img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+				</div>
+				
+				<button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
+			</div>
+
+		</div>
+
+		<!-- Modal for full size images on click-->
+		<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+			<span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+			
+			<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+				<iframe id = "videoFrame" width="100%" height="600em" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+				
+				<!-- <img id="img01" class="w3-image">
+				<p id="caption" class="w3-opacity w3-large"></p> -->
+			</div>
+		</div>
+
+		<!-- Third Parallax Image with Portfolio Text -->
+		<div class="bgimg-3 w3-display-container w3-opacity-min">
+			<div class="w3-display-middle">
+				<span class="w3-xxlarge w3-text-white w3-wide">SERVICES</span>
+			</div>
+		</div>
+
+		<!-- Container (Contact Section) -->
+		<div class="w3-content w3-padding-64 w3-row" id="contact">
+			<div class="w3-col m6 w3-center w3-padding-large">
+				<h3 class="w3-center"><u>PAYMENT INFORMATION</u></h3>
+				<p class="w3-center"><strong>Only Accepting Paypal USD</strong></p>
+				<p class="w3-center"><strong>1-2 hours of work</strong> - 10-25 USD</p>
+				<p class="w3-center"><strong>12-24 hours of work</strong> - 25-50 USD</p>
+				<p class="w3-center"><strong>24-48+ hours of work</strong> - 50-100+ USD</p>
+			</div>
+
+			<div class="w3-col m6 w3-center w3-padding-large">
+				<h3 class="w3-center"><u>CONTACT</u></h3>
+				<p class="w3-center"><em><strong>Discord:</strong> azerothxx - 592596673692434453</em></p>
+				<p class="w3-center"><em><strong>Roblox:</strong> Azerothxx - 2052015528</em></p>
+			</div>
+		</div>
+
+		<script src="/Javascript/index.js"></script>
+	</body>
+</html>
